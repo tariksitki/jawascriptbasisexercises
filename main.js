@@ -270,16 +270,121 @@ var today = new Date();
 
 
 
+    function multiplyBy ()
+     {
+         num1 = document.getElementById("firstNumber").value;
+
+         num2 = document.getElementById("secondNumber").value;
+
+         var total1 = document.getElementById("result").innerHTML = num1 * num2 ;
+
+         console.log(total1);
+         
+
+    }
+
+    function divideBy ()
+     {
+         num1 = document.getElementById("firstNumber").value;
+
+         num2 = document.getElementById("secondNumber").value;
+
+        var total2 = document.getElementById("result").innerHTML = num1 / num2 ;
+
+        console.log(total2);
+        
+    }
+
+
+    // **************  Notiz:  Html de Span elementi, burada, sayilar carpildiktan sonra yada bölündükten sonra ortaya cikan degeri göstermek icin kullandigimiz bir element.
+
+                                // Ama baska amaclar icin de kullanilabilir. Mesela asagidaki gibi kullanilabilir.
+
+
+    function mybutton() {
+
+        document.getElementById("myspan").innerHTML =  "Ich liebe dich"        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    // Exercise 11   Convert Temperatutes from Celcius to Fahrenheit or from Fahrenheit to Celcius;
+    
+    
+    function cToF(Celcius) 
+    {
+        var cTemp = Celcius;
+
+        var cToFahr = cTemp * 9 / 5 + 32;
+
+        var message = cTemp + "\xB0C is " + cToFahr + "\xB0F." ;  // Buradaki \xB0C  console da Santigrad isareti olarak cikiyor digeri ise fahrenheit olarak
+        
+        console.log(message);          
+    }
+
+
+    function fToC(Fahrenheit)
+     {
+         var fTemp = Fahrenheit;
+
+         var fToCel = (fTemp - 32 ) * 5 / 9;
+
+         var message = fTemp + "\xB0F is" + fToCel + "\xB0C";
+
+         console.log(message);    
+    }
+
+    cToF(20);
+
+    fToC(80);
+
+
     
 
 
 
 
-
     
 
+            //  Asagidaki iki function, celcius ve Fahrenheit formulleri icin yaptigimiz alistirmalar. 
 
-            
+
+
+function cbutton(Celcius) {
+
+
+    var a = document.getElementById("cinput").value ;
+
+    var b = a * 9 / 5 + 32;
+
+    var c = document.getElementById("finput").value = b + "\xB0F";
+
+    var d = document.getElementById("cinput").value = a + "\xB0C" ;
+
+}
+
+
+
+function fbutton(Fahrenheit) {
+
+    var a = document.getElementById("finput").value ;
+
+    var b = (a - 32) * 5 / 9 ;
+
+    var c = document.getElementById("finput").value = a + "\xB0F"
+    
+    var d = document.getElementById("cinput").value = b + "\xB0C"
+
+}
             
     
 
