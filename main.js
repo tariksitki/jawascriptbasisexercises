@@ -392,6 +392,146 @@ function fbutton(Fahrenheit) {
 
 
 
+    // EXERCISE 12  TO GET THE WEBSITE URL (Loading Page) 
+
+    // Wir können diese code für 2 Situation schreiben. Erste kommt URL zu console log,  zweite kommt URL Code zu alert.
+
+
+
+    console.log(document.URL); 
+
+    alert(document.URL);
+
+
+
+
+
+
+    //  EXERCISE 13   Create a variable using a user-defined name 
+
+   
+   
+    var var_name = "abcd" ;
+
+    var n = 120;
+
+    this[var_name] = n;
+
+    console.log(this[var_name]);
+
+
+
+    // EXERCISE 14  Get the extension of a filename ( Bir dosyanin uzantisini elde etmek)
+ 
+    
+    filename = "system.php" ;
+
+    console.log(filename.split(".").pop());
+
+    filename = "abc.js" ;
+
+    console.log(filename.split(".").pop());
+
+
+
+    filename = "tarik.doc" ;
+
+    console.log(filename.split(".").pop());
+
+
+    filename = "tarik.xls" ;
+
+    console.log(filename.split(".").pop());
+    
+    
+   
+
+
+
+    // EXERCISE 15   To get the difference between a given number and 13, 
+
+    //   If the Number is greater than 13 return double the absolute difference.
+
+    //  bir sayinin 13 ile arasindaki farki bul. Eger 13 den buyuk ise mutlak farki iki katina cikar.
+
+   
+    function difference(n) 
+    
+    {
+        if ( n<= 13)
+
+            return 13 - n ;
+
+        else 
+            return (n-13) * 2 ;
+        
+    }
+    
+    console.log(difference(32));
+
+    console.log(difference(11));
+
+    
+
+
+
+    // EXERCISE 16  To compute the sum of the two given integers. If two values are  same, then returns triple their sum.
+
+    //  Iki sayiyi toplamak. Sayilar esit ise toplami 3 e katlar.
+
+
+    function sumTriple(x,y) 
+    
+    { 
+        if ( x==y) { 
+            
+            return 3 * ( x + y) ;
+        }
+        else {    
+
+            return (x + y) ;
+        }
+        
+    }
+
+    console.log(sumTriple(10,20));
+
+    console.log(sumTriple(10,10));
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+    
+    
+   
+    
+
+
+
+
+
+
 
 
 
