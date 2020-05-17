@@ -392,6 +392,10 @@ function fbutton(Fahrenheit) {
 
 
 
+
+
+
+
     // EXERCISE 12  TO GET THE WEBSITE URL (Loading Page) 
 
     // Wir können diese code für 2 Situation schreiben. Erste kommt URL zu console log,  zweite kommt URL Code zu alert.
@@ -401,6 +405,10 @@ function fbutton(Fahrenheit) {
     console.log(document.URL); 
 
     alert(document.URL);
+
+
+
+
 
 
 
@@ -418,6 +426,12 @@ function fbutton(Fahrenheit) {
     this[var_name] = n;
 
     console.log(this[var_name]);
+
+
+
+
+
+
 
 
 
@@ -448,6 +462,10 @@ function fbutton(Fahrenheit) {
 
 
 
+
+
+
+
     // EXERCISE 15   To get the difference between a given number and 13, 
 
     //   If the Number is greater than 13 return double the absolute difference.
@@ -475,6 +493,10 @@ function fbutton(Fahrenheit) {
 
 
 
+
+
+
+
     // EXERCISE 16  To compute the sum of the two given integers. If two values are  same, then returns triple their sum.
 
     //  Iki sayiyi toplamak. Sayilar esit ise toplami 3 e katlar.
@@ -499,7 +521,43 @@ function fbutton(Fahrenheit) {
     console.log(sumTriple(10,10));
 
     
+
+
+
+
+
+
+
+
+
+    // EXERCISE 17  To compute the absolute difference between  a specified number and 19.
+
+    //  bir sayinin 19 ile arasindaki afrki bul. 19 dan kucuk ise 19-x,  19 dan büyük ise (x-19) * 3
+
+
+
     
+function diff_num(n) {
+
+    if (n <= 19) {
+
+        return (19 - n) ;
+        
+    }
+
+    else {
+
+        return (n-19) * 3 ;
+    }
+    
+}
+
+console.log(diff_num(12));
+
+console.log(diff_num(19));
+
+console.log(diff_num(22));
+
 
 
 
