@@ -633,9 +633,43 @@ console.log(diff_num(22));
 
     console.log(testhundred(200));
 
+
     
-    
-    
+
+
+
+
+
+
+
+    // EXERCISE 20  To check from two given integers, whether one is positive and another one is negative.
+
+    //   Sayilardan biri pozitif olsun digeri negativ olsun. Eger böyle ise sonuc true olsun. Gegilse false
+
+
+    function positive_negative(x,y) {
+
+        if ((x<0 && y>0)  || (x>0 && y<0) )
+        
+        {
+            return true;
+            
+        }
+
+        else {
+            return false
+        }
+        
+    }
+
+    console.log(positive_negative(2,2));
+
+    console.log(positive_negative(-2,2));
+
+    console.log(positive_negative(2,-2));
+
+    console.log(positive_negative(-2,-2));
+
     
     
 
@@ -644,9 +678,32 @@ console.log(diff_num(22));
 
 
 
-    
-    
+
+    // EXERCISE 21  Create a new string adding "Py" in front of a given string.
+
+    //              If the given string begins with "Py" then return the original string.
+
+
+    function string_check(str1) {
+
+        if (str1 === null || str1 === undefined || str1.substring(0,2) === "Py") {
    
+            return str1 ;              //  Notiz:  Bu satirdaki kodu sildigimizde sadece 2. return kodu calisacagindan, Normal Python olarak yazilmis stringler de dahil olmak üzere  hepsinin basina py koyacaktir. Cünkü ikinci return kodunda "Py" + str1 diyoruz. Bu nedenle normal Python yazilari PyPython olacak
+        }
+        
+            return "Py" + str1;
+    }
+
+
+
+    console.log(string_check("Python") );
+
+    console.log(string_check("thon"));
+
+    console.log(string_check(""));
+
+    console.log(string_check("abc"));
+
     
 
 
@@ -657,14 +714,7 @@ console.log(diff_num(22));
 
 
 
-
-
-    
-    
-    
-    
-  
-    
+    // EXERCISE 22   
 
 
 
