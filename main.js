@@ -565,15 +565,79 @@ console.log(diff_num(22));
 
 
 
+// EXERCISE 18     To check two given numbers and return true if one of the number is 50 or if their sum is 50
+
+//   2 sayidan  bir tanesi yada iki sayinin toplami 50 ise true olacak.
+
+
+
+    function test50(x,y)
+
+{ 
+    return ( ( x==50 || y == 50) || ( x + y == 50 ) ) ;
+
+}
+
+    console.log(test50(50,50));
+
+    console.log(test50(20,50));
+
+    console.log(test50(20,20));
+
+    console.log(test50(20,30));
+
+
+
+    function test40(a,b) 
+    
+    {
+        return ( ( a == 40 || b == 40) || (a+b == 40));
+
+    }
+    
+    console.log(test40(40,40));
+
+    console.log(test40(30,30));
+
+    console.log(test40(10,30));
+
+    
+    
 
 
 
 
+
+
+
+
+    // EXERCISE 19  to check whether a given integer is within 20 of 100 or 400.
+
+    // Eger verilen sayiyi 100 den veya 400 den cikardigimizda sonuc 20 den kucuk ise true.
+
+
+    
+    function testhundred(x) {
+
+        return ( (Math.abs(100-x)<= 20 )  || (Math.abs(400-x) <=20  ) ) ;
+
+    }
+
+    console.log(testhundred(10));
+
+    console.log(testhundred(90));
+
+    console.log(testhundred(99));
+
+    console.log(testhundred(199));
+
+    console.log(testhundred(200));
 
     
     
     
-
+    
+    
 
 
 
