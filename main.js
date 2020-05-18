@@ -802,6 +802,35 @@ console.log(diff_num(22));
     
     //         Ilk ve son karakteri cagirirken str1.charAt kullanmis, orta icin mid_char 
 
-    
-    
-    
+
+
+    function first_last(str1) {
+
+        if (str1<= 1) {
+
+            return str1;
+            
+        }
+        
+            mid_char = str1.substring(1, str1.length - 1);
+
+            return (str1.charAt(str1.length - 1)) + mid_char + str1.charAt(0);
+
+    }
+
+        
+        console.log(first_last("tarik"));
+
+        console.log(first_last("sitki"));
+        
+        
+
+
+
+
+
+
+
+
+
+        // Exercise 24 :  
