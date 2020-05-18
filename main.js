@@ -714,13 +714,52 @@ console.log(diff_num(22));
 
 
 
-    // EXERCISE 22   
+    // EXERCISE 22    Remove a character at the specified Position of a given string and return the new string
 
+    // Bir dizenin belirtilen bir karakterini cikar ve yeni dizeyi döndür.
+
+    // Notiz : Burada char_pos : karakter position /  substring: altdize / Formulün mantigini tam anlamadim ama asagida console.log icerisine hangi sayiyi yazarsak dizenin o karakterini cikariyor 
+
+
+
+    function remove_character(str, char_pos) {
+
+        part1 = str.substring (0, char_pos);
+
+        part2 = str.substring (char_pos + 1, str.length);
+
+        return ( part1 + part2);
+
+    }
+
+        console.log(remove_character("Python", 0));
+    
+        console.log(remove_character("Python", 3));
+
+        console.log(remove_character("Python",5));
+
+        
+    
+
+    function remove_character(str, char_pos) {
+
+        part1 = str.substring (0, char_pos);
+
+        part2 = str.substring (char_pos + 1, str.length)
+
+        return (part1 + part2 ) ;
+        
+    }
+
+
+    console.log(remove_character( "Tarik", 0));
+
+    console.log(remove_character("Tarik", 1));
+
+    console.log(remove_character("Tarik", 2));
+    
+    
 
 
     
-     
-    
-
-
     
