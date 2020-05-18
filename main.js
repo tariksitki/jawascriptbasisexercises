@@ -761,5 +761,47 @@ console.log(diff_num(22));
     
 
 
+
+
+
+
+
+
+    // Exercise 23   Create a new string from a given string, changing the position of first and last character
+
+    // Ilk ve son karakterin yerini degistirerek yeni string olusturma
+
+
+
+
+
+    function first_last(str1) {
+
+        if (str1.length <= 1) {
+    
+            return str1;
+        }
+        
+        mid_char = str1.substring( 1, str1.length - 1);
+
+        return ( str1.charAt(str1.length - 1)) + mid_char + str1.charAt(0) ;
+    }
+
+
+    console.log(first_last("a"));
+
+    console.log(first_last("ab"));
+
+    console.log(first_last("abcdefg"));
+
+    // Notiz :  Burada str1.lenght-1: stringin son harfidir. Baslangicta ilk eleman 0. eleman olur ama son eleman -1 olarak adlandirilir.
+
+    //          mid_ char : stringin ortasi yani middle.  mid_char i tanimlarken su sekilde tanimlamis. Stringin ortasi 1. eleman ile string.lenght-1 inci elemanin arasinda kalan kisim.
+
+    //         Sonra ikinci return formülünde önce en son elemani getir + stringin ortasini + en son da ilk elemani getir demisiz.
+    
+    //         Ilk ve son karakteri cagirirken str1.charAt kullanmis, orta icin mid_char 
+
+    
     
     
