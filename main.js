@@ -833,12 +833,18 @@ console.log(diff_num(22));
 
 
 
-        // Exercise 24 :  
+        // Exercise 24 :    To create a new string from a given string with the first character of the given string added at the front and back.
+
+        //  Verilen string in ilk harfini stringin basina ve sonuna ekleyerek  yeni bir string olusturma. Baslangicta ilk harften 2 tane oluyor.
 
 
         function front_back(str) {
 
-            first = str.substring(0,1) ;
+            first = str.substring(0,1) ;      //  substring parantezinin icerisine (0,1) yazdigimizda 0 ile 1 karakteri rasindaki sayiyi yada harfi alir. yani burada o harf ilk harf oluyor ve "a" dir. 
+            
+                                            //  Eger sadece 0 demis olsak 0. karakter dahil olmak üzere ondan sonraki tüm karakterleri yani tum kelimeyi yada harf grubunu aliyor. bu da console da söyle görünür. a= aaa  /   ab = abab /  abcabc
+                                            
+                                            //  Eger sadece 1 dersek, o zaman 2. karakter dahil olamak üzere ondan sonraki tüm kelimeyi alir. bu da console da;   a = a (cünkü alabilecegi 2. harf yok )   ab = babb  /   abc = bcabcbc
 
             return first + str + first ;
             
@@ -858,7 +864,13 @@ console.log(diff_num(22));
 
 
 
-            // Exercise 25
+
+
+
+
+            // Exercise 25  To check whether a given Positve number is a multiple of 3 or a multiple of 7
+
+            //  Bir sayinin 3 ün yada 7 nin kati olup olamadigini kontrol et
 
             function test37(x) {
 
@@ -876,7 +888,18 @@ console.log(diff_num(22));
             console.log(test37(14));
 
             console.log(test37(10));
-            
+
+            console.log(test37(11));
+
+
+
+
+
+      
+           
+           
+           
+
             
             
             
