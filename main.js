@@ -896,10 +896,87 @@ console.log(diff_num(22));
 
 
       
+
+            // Exercise 26 
+            
+            function front_back3(str)
+        {
+    if (str.length>=3)
+     {
+     str_len = 3;
+   
+    back = str.substring(str.length-3);
+     return back + str + back;
+          }
+     else
+       return false;
+          }
+
+         console.log(front_back3("abc"));
+         console.log(front_back3("ab"));
+         console.log(front_back3("abcd"));
+
+
+
+
+
+
+
+
+
+
+        // Exercise 27     
+
+
+
+
+
+
+
+        function start_spec_str(str)
+        {
+  if (str.length < 4)
+  {
+    return false;
+        }
+  front = str.substring(0, 4);
+  if (front == 'Java') 
+  {
+    return true;
+  }
+   else 
+   {
+    return false;
+  }
+        }
+
+        console.log(start_spec_str("JavaScript"));
+        console.log(start_spec_str("Java"));
+        console.log(start_spec_str("Python"));
            
            
            
 
             
             
+
+
+        //Exercise 28    
+
+
+        function check_numbers(x, y) 
+  {
+  if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99))
+  {
+    return true;
+  } 
+  else 
+  {
+    return false;
+  }
+}
+
+console.log(check_numbers(12, 101));
+console.log(check_numbers(52, 80));
+console.log(check_numbers(15, 99));
             
