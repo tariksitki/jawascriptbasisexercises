@@ -1096,28 +1096,24 @@ console.log(max_of_three(1000,510,440));
         
         {
 
-            x1 = Math.abs(x - 100);
+            x1 = Math.abs(x - 100);            // Bu formülde kritik olan nokta burasi. Birincisi diger if leri buradaki if in icerisine yazdik. Ikincisi ise verilen sayilardan 100 cikardigimizda hangisinin sonucu daha kücük ise formül sonucu o sayiya dönüstürüyor ve consol da o sayiyi gösteriyor.
 
             y1 = Math.abs(y - 100);    
         
-        if (x1<y1) 
-        
-        {
+        if (x1<y1) {
 
             return x;
     
         }
 
-        if (y1<x1) 
-        
-        {
+        if (y1<x1)   {
 
             return y;
             
         }
 
-            return 0;
-
+           
+        return 0;
     }   
 
         else 
@@ -1138,71 +1134,132 @@ console.log(max_of_three(1000,510,440));
 
 
 
+           
+                    
 
 
-
-
-
-
-        // Exercise 33 
-
-
-        
-        
-        
-        function numbers_ranges(x, y) {
-            if ((x >= 40 && x <= 60 && y >= 40 && y <= 60) 
-                || 
-                (x >= 70 && x <= 100 && y >= 70 && y <= 100))
-               {
-              return true;
-               } 
-              else 
-               {
-              return false;
-            }
-          }
-          
-          console.log(numbers_ranges(44, 56));
-          console.log(numbers_ranges(70, 95));
-          console.log(numbers_ranges(50, 89));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          // Exercise 34 
-
-
-
-
-
-          function max_townums_range(x, y){	
-            if( (x >= 40) && (x <= 60) && (y >= 40 && y <= 60) ){
-            if(x === y){
-            return "Numbers are the same";
-            }else if (x > y){
-            return x;
-            }else{
-            return y;
-            }
-            }else{
-            return "Numbers don't fit in range";
-            }
-            }
+                   
             
-            console.log(max_townums_range(45, 60));
-            console.log(max_townums_range(25, 60));
-            console.log(max_townums_range(45, 80));
 
+
+
+
+
+
+
+
+        // Exercise 33    Check whether two numbers are in range 40...60 or 70.100
+
+        //  Verilen 2 sayinin 40-60 yada 70-100 araliginda olup olmadigini kontrol ediyoruz.
+
+        // Ama kritik olan su. X ve Y ikisi birden ya 40-60 yada ikisi birden 70-100 araliginda olacak. Biri 40-60 birisi de 70-100 araliginda olmaz.
+
+
+        
+        
+        
+        function numbers_ranges(x,y) {
+
+            if ((x>= 40 && x <= 60 && y>=40 && y <= 60)      // Burada kritik olan husus su. Ilk if den sonra iki tane normal parantez ile basliyoruz.  Ama bu parantez if condition un en sonunda yine 2 tane ile kapaniyor. Eger bunu unutur isek formül calismiyor.
+
+                || 
+
+             (x>=70 && x<=100 && y>=70 && y<= 100))
+            
+            {
+
+                  return true;  
+            }
+
+                  else {
+
+                    return false;
+                  }
+
+        }
+
+
+
+
+
+        console.log(numbers_ranges(44,56));
+
+        console.log(numbers_ranges(70,95));
+
+        console.log(numbers_ranges(50,89));
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+          // Exercise 34    Find the larger number from the two given positive integers.   Verilen iki sayidan hangisinin büyük oldugunu bul
+
+
+
+
+          function max_townums(x,y) {
+
+            if (  ( x >=40) &&  (x<=60) && (y>=40) && (y<=60) ) {
+
+                if (x === y) {
+
+                    return "Numbers are the same";
+                    
+                }
+
+                else if (x>y) {                                   //     ************   Burada kritik olan yer burasi. Else if kullaniyor.
+
+                    return x;
+                }
+                 
+                else {
+
+                    return y;
+                }
+            }
+
+
+                else {                                          // Bu else ilk bastaki ana if'in else si diger else ler ise ana if'in icerisinde bulunan if lerin elseleri. 
+                                                                // Bu else diyor ki: Eger sayilar ilk if de verilen 40 ila 60 araliginda degil iseler hic buyugu kucugu bulmaya ugrasma sayilar bu aralikta degillerdir yaz. 
+                    return "Numbers don't fit in range"
+                }
+              
+          }
+
+
+
+          console.log(max_townums(45,60));
+
+          console.log(max_townums(25,60));        
+
+          console.log(max_townums(45,80));
+
+          console.log(max_townums(45,45));
+
+
+
+
+
+
+         
+                    
+                    
+                    
+         
+
+          
+          
+          
 
