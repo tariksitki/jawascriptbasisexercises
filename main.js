@@ -897,37 +897,46 @@ console.log(diff_num(22));
 
       
 
-            // Exercise 26 
+            // Exercise 26   To create a new string from a given string taking the last 3 characters and added at both the front and back
+
+            //  Verilen dizenin son 3 harfini kopyalayarak yeni bir dizi olustur. Bu 3 harfi stringin basina ekle. "Ing String Ing"
+
             
-            function front_back3(str)
-        {
-    if (str.length>=3)
-     {
-     str_len = 3;
-   
-    back = str.substring(str.length-3);
-     return back + str + back;
-          }
-     else
-       return false;
-          }
+            function front_back3(str) {
 
-         console.log(front_back3("abc"));
-         console.log(front_back3("ab"));
-         console.log(front_back3("abcd"));
+                if (str.length >= 3) {
+
+                    str_len = 3;               //  str_len nedir anlamadim ama formülden bu satiri silince ayni sekilde calismaya devam ediyor
+
+                    back = str.substring(str.length - 3);
+
+                    return back + str + back ;
+                    
+                }
+                
+                    else return false
+            }
 
 
+            console.log(front_back3("abc"));
+
+            console.log(front_back3("ab"));
+
+            console.log(front_back3("abcd"));
+
+            
+            
+            
+           
 
 
 
 
+    
 
 
 
-
-        // Exercise 27     
-
-
+        // Exercise 27       
 
 
 
@@ -1066,3 +1075,134 @@ console.log(max_of_three(1,0,1));
 console.log(max_of_three(0,-10,-20));
 console.log(max_of_three(1000,510,440));
             
+
+
+
+
+
+
+
+
+    // Exercise 32   To find a value which is nearest to 100 from two different given integer values.
+
+    //  Verilen degerlerden 100 e en yakin olanini bulma.  ( 100-90 = 10   100- 89= 11 )
+
+
+
+
+    function near_100(x,y) {
+
+        if (x != y) 
+        
+        {
+
+            x1 = Math.abs(x - 100);
+
+            y1 = Math.abs(y - 100);    
+        
+        if (x1<y1) 
+        
+        {
+
+            return x;
+    
+        }
+
+        if (y1<x1) 
+        
+        {
+
+            return y;
+            
+        }
+
+            return 0;
+
+    }   
+
+        else 
+
+            return false;
+
+    
+}
+
+
+        console.log(near_100(90,89));
+        
+        console.log(near_100(-90, -89));
+
+        console.log(near_100(90,90));
+
+
+
+
+
+
+
+
+
+
+
+        // Exercise 33 
+
+
+        
+        
+        
+        function numbers_ranges(x, y) {
+            if ((x >= 40 && x <= 60 && y >= 40 && y <= 60) 
+                || 
+                (x >= 70 && x <= 100 && y >= 70 && y <= 100))
+               {
+              return true;
+               } 
+              else 
+               {
+              return false;
+            }
+          }
+          
+          console.log(numbers_ranges(44, 56));
+          console.log(numbers_ranges(70, 95));
+          console.log(numbers_ranges(50, 89));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          // Exercise 34 
+
+
+
+
+
+          function max_townums_range(x, y){	
+            if( (x >= 40) && (x <= 60) && (y >= 40 && y <= 60) ){
+            if(x === y){
+            return "Numbers are the same";
+            }else if (x > y){
+            return x;
+            }else{
+            return y;
+            }
+            }else{
+            return "Numbers don't fit in range";
+            }
+            }
+            
+            console.log(max_townums_range(45, 60));
+            console.log(max_townums_range(25, 60));
+            console.log(max_townums_range(45, 80));
+
+
