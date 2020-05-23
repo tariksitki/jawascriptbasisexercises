@@ -987,51 +987,89 @@ console.log(diff_num(22));
             
 
 
-        //Exercise 28    
+        //Exercise 28    Check whether two given integer values are in the range 50-99. Return true if either of them are in the said range.
+        
+        //  Eger verilen 2 sayidan herhangi bir tanesi 50-99 araliginda ise true degerini verir. 
+        
+        //  NOTIZ : Iki degerinde bu aralikta olamsina gerek yok
 
 
-        function check_numbers(x, y) 
-  {
-  if ((x >= 50 && x <= 99) || (y >= 50 && y <= 99))
-  {
-    return true;
-  } 
-  else 
-  {
-    return false;
-  }
-}
-
-console.log(check_numbers(12, 101));
-console.log(check_numbers(52, 80));
-console.log(check_numbers(15, 99));
+        
 
 
 
 
+        function check_numbers(x,y) {
+
+            if ( ( x>= 50 && x<= 99) || ( y>= 50 && y <= 99)   ) {
+
+                return true;
+                
+            }
+
+            else {
+
+                return false;
+            }
+            
+        }
 
 
+            console.log(check_numbers(12,101));
 
+            console.log(check_numbers(52,80));
 
-
-
-            // Exercise 29   
-
-
-            function check_three_nums(x, y, z) 
-{
-  return (x >= 50 && x <= 99) || (y >= 50 && y <= 99) || (z >= 50 && z <= 99);
-}
-
-console.log(check_three_nums(50, 90, 99));
-console.log(check_three_nums(5, 9, 199));
-console.log(check_three_nums(65, 89, 199));
-console.log(check_three_nums(65, 9, 199));
+            console.log(check_numbers(15,99));
 
 
 
 
 
+
+
+
+
+
+            
+
+
+
+
+            // Exercise 29    Check whether three given integer values are in the range 50-99
+
+            //  **************   Burada kritik husus:  Eger verilen sayilardan herhangi biri 50-99 araliginda ise true verir. 3 Tanesinin de olmasina gerek yok.
+            
+            //  **************   Ama üc tanesi de aralikta degilse false.  Zum beispiel console 2.     
+
+
+                function check_three_nums(x,y,z) {
+
+                  return ( x>= 50 && x<= 99 || y >= 50 && y <= 99 || z >= 50 && z <= 99);
+  
+                }
+
+                console.log(check_three_nums(50,90,99));
+
+                console.log(check_three_nums(5,9,199));
+
+                console.log(check_three_nums(65,89,199));
+
+                console.log(check_three_nums(65,9, 199));
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
 
 
             // Exercise 30    
