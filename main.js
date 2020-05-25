@@ -1311,8 +1311,104 @@ console.log(max_of_three(1000,510,440));
          
                     
                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          // Exercise 35  
                     
          
+          function check_char(str, char)
+          {
+           ctr = 0;
+           for (let i = 0; i < str.length; i++)
+           {
+             if (str.charAt(i) == char) {
+               ctr++;
+             }
+           }
+           return (ctr >= 2 && ctr <= 4);
+         }
+         
+         console.log(check_char("Python", "y"));
+         console.log(check_char("JavaScript", "a"));
+         console.log(check_char("Console", "o"));
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          // Exercise 36
+
+
+
+
+          function last_digit(x, y, z)
+          {
+            if ((x > 0) && y > 0 && z > 0)
+              {
+               return (x % 10 == y % 10 && y % 10 == z % 10 && x % 10 == z % 10);
+             }
+            else
+              return false;
+          }
+          
+          console.log(last_digit(20, 30, 400));
+          console.log(last_digit(-20, 30, 400));
+          console.log(last_digit(20, -30, 400));
+          console.log(last_digit(20, 30, -400));
+
+
+
+
+
+
+
+
+
+
+
+                // Exercise 37 
+
+
+
+
+                function upper_lower(str) {
+                    if (str.length < 3) {
+                      return str.toUpperCase();
+                    }
+                    front_part = (str.substring(0, 3)).toLowerCase();
+                    back_part = str.substring(3, str.length);  
+                    return front_part + back_part;
+                  }
+                  console.log(upper_lower("Python"));
+                  console.log(upper_lower("Py"));
+                  console.log(upper_lower("JAVAScript"));
+
+
+
+
 
           
           
