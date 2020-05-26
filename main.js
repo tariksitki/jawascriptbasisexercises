@@ -1436,23 +1436,42 @@ console.log(max_of_three(1000,510,440));
 
 
 
-                // Exercise 37 
+                // Exercise 37    Create new string with first 3 characters are in lower case
+
+                // Ilk 3 karakteri kücük harf yapma
 
 
 
 
-                function upper_lower(str) {
-                    if (str.length < 3) {
-                      return str.toUpperCase();
+
+                    function upper_lower(str) {
+
+                        if (str.length < 3 ) {
+
+                            return str.toUpperCase();
+                            
+                        }
+                        
+                        front_part = ( str.substring(0,3)).toLowerCase();
+
+                        back_part = str.substring(3, str.length);
+
+                        return front_part + back_part;
                     }
-                    front_part = (str.substring(0, 3)).toLowerCase();
-                    back_part = str.substring(3, str.length);  
-                    return front_part + back_part;
-                  }
-                  console.log(upper_lower("Python"));
-                  console.log(upper_lower("Py"));
-                  console.log(upper_lower("JAVAScript"));
 
+
+
+
+                    console.log((upper_lower("Python")));
+
+                    console.log(upper_lower("Py"));
+
+                    console.log(upper_lower("JAVAScript"));
+
+                    
+                    
+                    
+                    
 
 
 
