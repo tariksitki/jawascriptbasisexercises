@@ -1388,29 +1388,47 @@ console.log(max_of_three(1000,510,440));
 
 
 
-          // Exercise 36
+          // Exercise 36   Check whether the last digit of the three given positive integers is same 
+
+          //   Verilen üc degerin son basamaklarinin ayni olup olmadigini kontrol et
+
+
+
+                function last_digit(x, y , z) 
+                
+                {
+
+                    if ( ( x > 0) && y > 0 && z > 0 )
+                    
+                    {
+
+                        return ( x % 10 == y % 10 && y % 10 == z % 10 && x % 10 == z % 10);
+                        
+                    }
+  
+                    else 
+
+                        return false;
+                }
+
+
+                console.log(last_digit(20, 30, 400));
+
+                console.log(last_digit(-20, 30, 400));
+
+                console.log(last_digit(20, -30, 400));
+
+                console.log(last_digit(20, 30, -400));
+
+                
+                
+                
+                
 
 
 
 
-          function last_digit(x, y, z)
-          {
-            if ((x > 0) && y > 0 && z > 0)
-              {
-               return (x % 10 == y % 10 && y % 10 == z % 10 && x % 10 == z % 10);
-             }
-            else
-              return false;
-          }
-          
-          console.log(last_digit(20, 30, 400));
-          console.log(last_digit(-20, 30, 400));
-          console.log(last_digit(20, -30, 400));
-          console.log(last_digit(20, 30, -400));
-
-
-
-
+         
 
 
 
