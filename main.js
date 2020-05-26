@@ -1323,26 +1323,55 @@ console.log(max_of_three(1000,510,440));
 
 
 
+          // *************************   Bu formüldeki ctr,   charAt,   let   tabirlerini bilmedigim icin formülü anlamadim. **********************
+
+          // Exercise 35   Check whether a specified character exists within the 2nd to 4th position in a given string
+
+          // Belirtilen karakterin 2. ve 4. position da olup olmadigini kontrol et
 
 
-          // Exercise 35  
+
+
+
+          function check_char(str, char) 
+          
+          {
+
+            ctr = 0;
+
+            for ( let i = 0; i < str.length; i++)
+
+            { 
+                if (str.charAt(i)   == char) {
+
+                    ctr++;
+                    
+                }
+              
+          }
+
+                return ( ctr >=2 && ctr <= 4) ;
+                
+        }
+
+
+
+        console.log( check_char("Python" , "y"));
+
+        console.log( check_char("JavaScript" , "a"));
+
+        console.log( check_char("Console" , "o"));
+
+        
+        
+        
                     
          
-          function check_char(str, char)
-          {
-           ctr = 0;
-           for (let i = 0; i < str.length; i++)
-           {
-             if (str.charAt(i) == char) {
-               ctr++;
-             }
-           }
-           return (ctr >= 2 && ctr <= 4);
-         }
-         
-         console.log(check_char("Python", "y"));
-         console.log(check_char("JavaScript", "a"));
-         console.log(check_char("Console", "o"));
+       
+
+
+
+
          
 
 
