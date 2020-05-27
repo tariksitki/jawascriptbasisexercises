@@ -1412,7 +1412,7 @@ console.log(max_of_three(1000,510,440));
                 }
 
 
-                console.log(last_digit(2, 30, 400));
+                console.log(last_digit(20, 30, 400));           //   Burada kritik olan husus su. Verilen degerler tek basamakli sayi oldugunda, örnegin 20 yerine 2 yazdigimizda sonucu false veriyor.
 
                 console.log(last_digit(-20, 30, 400));
 
@@ -1431,27 +1431,7 @@ console.log(max_of_three(1000,510,440));
 
 
 
-                function last_digit(x, y, z) {
-
-                    if ( (x > 0) && y > 0 && z > 0) {
-
-                        return ( x % 10 == y % 10 && y % 10 == z % 10 &&  x % 10 == z % 10 );
-                        
-                    }
-
-                    else
-
-                        return false;
-                    
-                }
-
-
-                        console.log(last_digit( 40, 400, 4000));
-
-                        console.log( last_digit(20,30,300));
-
-
-                        
+            
                         
                 
                 
@@ -1499,6 +1479,109 @@ console.log(max_of_three(1000,510,440));
                 console.log(upper_lower("Py"));
 
                 console.log(upper_lower("JAVAScript"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Exercise 38   
+
+
+
+
+                function exam_status(totmarks,is_exam)
+                {
+                if (is_exam) {
+                  return totmarks >= 90;
+                }
+               return (totmarks >= 89 && totmarks <= 100);
+               }
+              
+              console.log(exam_status("78", " "));
+              console.log(exam_status("89", "true "));
+              console.log(exam_status("99", "true "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+              // Exercise 39    
+
+
+
+
+
+
+              function sortaSum(x, y) 
+              {
+               const sum_nums = x + y;
+               if (sum_nums >= 50 && sum_nums <= 80) {
+                 return 65;
+               }
+               return 80;
+             }
+             
+             console.log(sortaSum(30,20));
+             console.log(sortaSum(90,80));
+
+
+
+
+
+
+
+
+
+
+
+             //  Exercise 40
+
+
+
+
+
+
+             function check8(x, y) {
+                if (x == 8 || y == 8) {
+                  return true;
+                }
+              
+                if (x + y == 8 || Math.abs(x - y) == 8)
+                {
+                  return true;
+                }
+              
+                return false;
+              }
+              
+              console.log(check8(7, 8));
+              console.log(check8(16, 8));
+              console.log(check8(24, 32));
+              console.log(check8(17, 18));
+
+
+
+
+
+
+
 
 
                   
