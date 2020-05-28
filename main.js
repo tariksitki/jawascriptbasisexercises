@@ -1620,7 +1620,97 @@ console.log(max_of_three(1000,510,440));
         
               console.log(three_numbers(8,7,18));
 
+
+
+
+
+
+
+
+
+
+
+
+
+              // Exercise 42   
+
+
+
+
+
+
+
+              function number_order(x, y, z ) {
+                if ( y > x && z > y) 
+                {
+                  return "strict mode";    
+                }
+                else if(z > y) 
+                 return "Soft mode";
+                else
+                  return "Undefinded";
+              }
               
+              console.log(number_order(10,15,31));
+              console.log(number_order(24,22,31));
+              console.log(number_order(50,21,15));
+
+
+
+
+
+
+
+
+
+
+
+              // Exercise 43  
+
+
+
+
+
+              function same_last_digit(p, q, r) {
+                return (p % 10 === q % 10) ||
+                       (p % 10 === r % 10) ||
+                       (q % 10 === r % 10);
+                       
+            }
+            
+            console.log(same_last_digit(22,32,42));
+
+            console.log(same_last_digit(102,302,2));
+            
+            console.log(same_last_digit(20,22,45));
+
+
+
+
+
+
+
+
+            // Exercise 44
+
+
+
+
+
+            function lessby20_others(x, y, z) 
+            {
+            return (x >= 20 && (x < y || x < z)) ||
+            (y >= 20 && (y < x || y < z)) ||
+            (z >= 20 && (z < y || z < x));
+            }
+
+
+
+            console.log(lessby20_others(23, 45, 10));
+
+            console.log(lessby20_others(23, 23, 10));
+
+            console.log(lessby20_others(21, 66, 75));
               
               
 
