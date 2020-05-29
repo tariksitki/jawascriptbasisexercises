@@ -1745,7 +1745,56 @@ console.log(max_of_three(1000,510,440));
                     console.log(test_number(5,9));
 
                     console.log(test_number(7,9));
+
+
+
+
+
+
+
+
+
+                    // Exercise 46    Check from two given non-negative integers that whether one of the numver is multiple of 7 or 11
+
+                    // verilen 2 sayidan bir tanesinin 11 veya 7 nin kati olup olmadigini kontrol edin
+
+
+
+
+                    function valCheck(a,b) {
+
+                        if ( ! ((a % 7 == 0 || a % 11 == 0 ) && (b % 7 == 0 || b % 11 == 0))) {
+
+                            
+                            return ((a % 7 == 0 || a % 11 == 0) || (b % 7 == 0 || b % 11 == 0));
+
+                        }
+
+                            else 
+
+                            return false;
+                        
+                    }
                     
+                            console.log(valCheck(14,21));
+
+                            console.log(valCheck(14,20));
+
+                            console.log(valCheck(16,20));
+
+
+
+
+
+
+
+                        // Exercise 47 
+
+
+                        
+                            
+                            
+                            
                     
 
 
