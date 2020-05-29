@@ -1587,8 +1587,9 @@ console.log(max_of_three(1000,510,440));
 
 
 
-              // Exercise 41        
-
+              // Exercise 41      Check three given numbers, if the three numbers are same return 30, otherwise return 20 and if two numbers are same return 40
+              
+              //  Eger verilen 3 sayi da birbirine esit ise 30 a ,  2 sayi esit ise 40 a ,  hicbiri esit degil ise 20 ye dönüstür.
 
 
 
@@ -1619,10 +1620,6 @@ console.log(max_of_three(1000,510,440));
               console.log(three_numbers(8,8,18));
         
               console.log(three_numbers(8,7,18));
-
-
-
-
 
 
 
@@ -1681,7 +1678,7 @@ console.log(max_of_three(1000,510,440));
             console.log(same_last_digit(22,32,42));
 
             console.log(same_last_digit(102,302,2));
-            
+
             console.log(same_last_digit(20,22,45));
 
 
@@ -1718,6 +1715,38 @@ console.log(max_of_three(1000,510,440));
 
 
 
+
+
+
+                // Exercise 45  Check two given integer values and return true if one of the number is 15 or if their sum or difference is 15
+
+                // Eger sayilardan biri 15 ise, yada farklari yada toplamlari 15 ise true degeri döndür.
+
+
+
+
+                    function test_number(x,y) {
+
+
+                        return ( x === 15 || y === 15 || x + y === 15 || Math.abs(x - y) === 15);
+ 
+                    }
+
+
+
+                    console.log(test_number(15,9));
+
+                    console.log(test_number(25,15));
+
+                    console.log(test_number(7,8));
+
+                    console.log(test_number(25,10));
+
+                    console.log(test_number(5,9));
+
+                    console.log(test_number(7,9));
+                    
+                    
 
 
 
