@@ -1947,6 +1947,44 @@ console.log(capital_letter("Write a JavaScript program to capitalize the first l
 
 
 
+                                       // Exercise 52
+
+
+
+
+                                       function alphabet_Soup(str) { 
+
+                                        return str.split("").sort().join("");
+                                             
+                                    }
+                                    
+                                    console.log(alphabet_Soup("Python"));
+                                    
+                                    console.log(alphabet_Soup("Exercises"));
+
+
+
+
+
+
+                                    // Exercise 53
+
+
+                                    function ab_Check(str)
+                                    {
+                                       return (/a...b/).test(str) || (/b...a/).test(str);
+                                    }
+                                   
+                                   console.log(ab_Check("Chainsbreak"));
+                                   console.log(ab_Check("pane borrowed"));
+                                   console.log(ab_Check("abCheck"));
+
+
+
+
+
+
+
 
 
 
