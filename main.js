@@ -2081,6 +2081,43 @@ console.log(capital_letter("Write a JavaScript program to capitalize the first l
 
 
 
+                                    // Exercise 58
+
+
+
+                                    function newstring(str)
+                                    {
+                                      if (str.length >= 3) {
+                                        result_str = str.substring(str.length - 3);
+                                        return result_str + result_str + result_str + result_str;
+                                      }
+                                      else
+                                        return false;
+                                    }
+                                    console.log(newstring("Python 3.0"));
+                                    console.log(newstring("JS"));
+                                    console.log(newstring("JavaScript"));
+
+
+
+
+
+                                    // Exercise 59 
+
+                                    function first_half (str) {
+                                        if (str.length % 2 == 0) {
+                                          return str.slice(0, str.length / 2);
+                                        }
+                                        return str;
+                                      }
+                                      console.log(first_half("Python"));  
+                                      console.log(first_half("JavaScript")); 
+                                      console.log(first_half("PHP"));
+
+
+
+
+
 
                      
                                 
